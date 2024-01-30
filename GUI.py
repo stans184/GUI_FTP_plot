@@ -5,6 +5,7 @@ from PyQt5.QtGui import QStandardItem, QStandardItemModel
 from PyQt5.uic import loadUi
 
 from FTPClient import FTPClient
+from logger_config import setup_logger
 
 class GUI(QMainWindow):
     
@@ -17,7 +18,7 @@ class GUI(QMainWindow):
         
     # 종료 감지
     def closeEvent(self, event):
-        print("program quit")
+        self.logger.info("program quit")
         event.accept()
     
     def __init__(self, data):
@@ -25,6 +26,7 @@ class GUI(QMainWindow):
         self.line = None
         self.machine_type = None
         self.machine_name = None
+        self.logger = setup_logger()
         
         super(GUI, self).__init__()
         
