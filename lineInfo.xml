@@ -1,0 +1,9 @@
+<lines>
+    <line name="test">
+        <machineType name="test">
+            <machine name="test">
+                <host name="test" pwd="test" id="tset"/>
+            </machine>
+        </machineType>
+    </line>
+</lines>

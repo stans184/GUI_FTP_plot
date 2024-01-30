@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ScannerAnalyzer</class>
+ <widget class="QMainWindow" name="ScannerAnalyzer">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1126</width>
+    <height>792</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Scanner Analyzer</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>SAT_icon.png</normaloff>SAT_icon.png</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(0, 28, 62);</string>
+  </property>
+  <widget class="QWidget" name="main">
+   <widget class="QListView" name="LineView">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>30</y>
+      <width>151</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);
+color: black;</string>
+    </property>
+   </widget>
+   <widget class="QListView" name="MachineTypeView">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>150</y>
+      <width>151</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);
+color: black;</string>
+    </property>
+   </widget>
+   <widget class="QListView" name="MachineListView">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>260</y>
+      <width>151</width>
+      <height>121</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);
+color: black;</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="LineLabel">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>101</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: white; font-weight:bold;</string>
+    </property>
+    <property name="text">
+     <string>Select Line</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="TypeLabel">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>130</y>
+      <width>151</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: white; font-weight:bold;</string>
+    </property>
+    <property name="text">
+     <string>Select Machine Type</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="MachineLabel">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>240</y>
+      <width>151</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: white; font-weight:bold;</string>
+    </property>
+    <property name="text">
+     <string>Select Machine</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
